@@ -1,0 +1,47 @@
+<title>无标题文档</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 211px;
+	top: 9px;
+	visibility: hidden;
+	background-color: rgb(204,255,153);
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 2;
+	left: 415px;
+	top: 9px;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="apDiv1"></div>
+<div id="apDiv2">ap div</div>
+<table width="200" border="1">
+  <tr>
+    <td onmousemove="MM_showHideLayers('apDiv1','','show')" onmouseout="MM_showHideLayers('apDiv1','','hide')" onfocus="MM_showHideLayers('apDiv1','','hide')">显示图层一</td>
+  </tr>
+  <tr>
+    <td onmousemove="MM_showHideLayers('apDiv2','','show')" onmouseout="MM_showHideLayers('apDiv2','','hide')" onfocus="MM_showHideLayers('apDiv2','','hide')">显示图层二</td>
+  </tr>
+</table>
+
+</body>
+</html>
