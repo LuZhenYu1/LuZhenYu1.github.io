@@ -1,1 +1,1 @@
-<img src="dogs.png" id="img2"/>
+<p>加载完成</p>
