@@ -8,14 +8,25 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-	  $("#img1").load("test.txt");
+	  $("#apDiv1").load("test.txt");
 })
 })
 </script>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 49px;
+	top: 76px;
+}
+</style>
 </head>
 
 <body>
 <button>加载</button>
-<img src="cats.png" width="149" height="111" id="img1"/>
+<div id="apDiv1"><p>加载后改变</p></div>
+<p>&nbsp;</p>
 </body>
 </html>
