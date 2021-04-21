@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("p").css({"background-color":"rgb(0,102,255)","opacity":"0.6"});
+  });
+});
+</script>
+</head>
+
+<body>
+<button>改变p的样式</button>
+<h2>此行不变</h2>
+<p style="background-color:rgb(204,204,204)">此行改变</p>
+
+</body>
+</html>
